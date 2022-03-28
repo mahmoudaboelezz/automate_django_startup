@@ -11,8 +11,9 @@ import webbrowser
 4-create project
 5-create app[option]
 6-migrate
-7-runserver
-8-website
+7-create super user
+8-runserver
+9-website
 '''
 venv_name = str(input('Enter the name of venv : '))
 os.system(f'python -m venv {venv_name}')
