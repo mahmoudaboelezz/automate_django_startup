@@ -34,5 +34,12 @@ if query.lower() in 'yes':
 else:
     pass
 os.system('python manage.py migrate')
+def createSuperUser():
+    username = 'admin'
+    email = 'admin'
+    os.system(f'python manage.py createsuperuser --username={username} --email={email}')
+# option create superuser with name admin 
+createSuperUser()
+os.system('exit')
 webbrowser.open('http://127.0.0.1:8000/')
 os.system('python manage.py runserver')
